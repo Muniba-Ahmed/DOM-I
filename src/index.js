@@ -68,6 +68,32 @@ middleImage.src = siteContent.images["accent-img"];
 
 //**********TEXT CONTENT**********
 
+//Header-Nav
+
+const nav = document.querySelector("nav");
+nav.children[0].textContent = siteContent.nav["nav-item-1"];
+nav.children[1].textContent = siteContent.nav["nav-item-2"];
+nav.children[2].textContent = siteContent.nav["nav-item-3"];
+nav.children[3].textContent = siteContent.nav["nav-item-4"];
+nav.children[4].textContent = siteContent.nav["nav-item-5"];
+nav.children[5].textContent = siteContent.nav["nav-item-6"];
+
+nav.children[0].classList.add("italic");
+nav.children[1].classList.add("italic");
+nav.children[2].classList.add("italic");
+nav.children[3].classList.add("italic");
+nav.children[4].classList.add("italic");
+nav.children[5].classList.add("italic");
+
+nav.forEach((link) => {
+  link.classList.add("italic");
+});
+
+//CTA
+const cta = document.querySelector(".cta-text");
+cta.querySelector("h1").textContent = siteContent.cta["h1"];
+cta.querySelector("button").textContent = siteContent.cta["button"];
+
 //Top Content
 const topContent = document.querySelector(".top-content");
 topContent.children[0].children[0].textContent =
