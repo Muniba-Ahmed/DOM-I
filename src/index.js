@@ -85,10 +85,6 @@ nav.children[3].classList.add("italic");
 nav.children[4].classList.add("italic");
 nav.children[5].classList.add("italic");
 
-nav.forEach((link) => {
-  link.classList.add("italic");
-});
-
 //CTA
 const cta = document.querySelector(".cta-text");
 cta.querySelector("h1").textContent = siteContent.cta["h1"];
